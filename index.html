@@ -1,87 +1,139 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
-        <title>First Day Mini Home Work</title>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-    </head>
-    <body>
-        <h1>Playing with HTML</h1>
-        <h4>(This page has some responsive features)</h4>
 
-        <div id="catLinks">
-            <div id="cat">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Savannah_Cat_portrait.jpg/220px-Savannah_Cat_portrait.jpg" alt="cool-cat" id="coolCat">
-            </div>
-            <div id="links">   
-                <ul id="linksList">
-                    <li class="noBullet"><a href="http://www.google.com" target="_blank">Google</a></li>
-                    <li class="noBullet"><strong><a href="http://www.wikipedia.org">Wikipedia</a></strong></li>
-                    <li class="noBullet"><a href="">Nowhere</a></li>
-                </ul>
-            </div> 
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <title>First Day Mini Home Work</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-        <br><br>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
 
-        <div id="sandwich">
-            <h3>How to make an <em>alleged</em> sandwich:</h3>
-            <ol>
-                <li class="movePointsLeft">First take two pieces of bread.</li>
-                <li class="movePointsLeft">Then put peanut butter on one piece.</li>
-                <li class="movePointsLeft">Next put jelly on the other piece.</li>
-                <li class="movePointsLeft">Counterintuitively, those pieces of bread go together.</li>
-                <li class="movePointsLeft">Finally, eat it. Apparently.</li>
-            </ol>
-        </div>
+<body>
 
-        <div id="bands">
-            <h3>Here are some great artists to code to:</h3>
-            <ul>
-                <li class="bulletPointsRight">Mono</li>
-                <li class="bulletPointsRight">Sigur Rós</li>
-                <li class="bulletPointsRight">Múm</li>
-                <li class="bulletPointsRight">My Bloody Valentine</li>
-                <li class="bulletPointsRight">Ride</li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#sandwichTop">Sandwich<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bandsTop">Bands</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#animals">Animals</a>
+                        <a class="dropdown-item" href="#">No Link</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Also No Link</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
             </ul>
         </div>
+    </nav>
 
-        <br>
+    <h1>Playing with HTML</h1>
+    <h4>(This page has some responsive features)</h4>
 
-        <div id="animals">
-            <h3 class="center">Some Animals and their classes:</h3>
-            <table>
-                <tbody>
-                    <tr>
-                        <th>Name</th>
-                        <th>Class</th>
-                    </tr>
-                    <tr>
-                        <td>Cat</td>
-                        <td>Mammalia</td>
-                    </tr>
-                    <tr>
-                        <td>Dog</td>
-                        <td>Mammalia</td>
-                    </tr>
-                    <tr>
-                        <td>Tarantula</td>
-                        <td>Arachnid</td>
-                    </tr>
-                    <tr>
-                        <td>Tauntaun</td>
-                        <td>Snow Lizard</td>
-                    </tr>
-                </tbody>
-            </table>
+    <div id="catLinks">
+        <div id="cat">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Savannah_Cat_portrait.jpg/220px-Savannah_Cat_portrait.jpg"
+                alt="cool-cat" id="coolCat">
         </div>
-
-        <br>
-
-        <div class="center">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/sPGepgWupTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="links">
+            <ul id="linksList">
+                <li class="noBullet"><a href="http://www.google.com" target="_blank">Google</a></li>
+                <li class="noBullet"><strong><a href="http://www.wikipedia.org">Wikipedia</a></strong></li>
+                <li class="noBullet"><a href="">Nowhere</a></li>
+            </ul>
         </div>
+    </div>
 
-        </body>
+    <br><br>
+    
+    <div id="sandwich" class="anchor"><span id="sandwichTop"></span>
+        <h3>How to make an <em>alleged</em> sandwich:</h3>
+        <ol>
+            <li class="movePointsLeft">First take two pieces of bread.</li>
+            <li class="movePointsLeft">Then put peanut butter on one piece.</li>
+            <li class="movePointsLeft">Next put jelly on the other piece.</li>
+            <li class="movePointsLeft">Counterintuitively, those pieces of bread go together.</li>
+            <li class="movePointsLeft">Finally, eat it. Apparently.</li>
+        </ol>
+    </div>
+
+    <div id="bands" class="anchor"><span id="bandsTop"></span>
+        <h3>Here are some great artists to code to:</h3>
+        <ul>
+            <li class="bulletPointsRight">Mono</li>
+            <li class="bulletPointsRight">Sigur Rós</li>
+            <li class="bulletPointsRight">Múm</li>
+            <li class="bulletPointsRight">My Bloody Valentine</li>
+            <li class="bulletPointsRight">Ride</li>
+        </ul>
+    </div>
+
+    <br>
+
+    <div id="animals">
+        <h3 class="center">Some Animals and their classes:</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Name</th>
+                    <th>Class</th>
+                </tr>
+                <tr>
+                    <td>Cat</td>
+                    <td>Mammalia</td>
+                </tr>
+                <tr>
+                    <td>Dog</td>
+                    <td>Mammalia</td>
+                </tr>
+                <tr>
+                    <td>Tarantula</td>
+                    <td>Arachnid</td>
+                </tr>
+                <tr>
+                    <td>Tauntaun</td>
+                    <td>Snow Lizard</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br>
+
+    <div class="center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sPGepgWupTw" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

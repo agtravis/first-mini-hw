@@ -2,6 +2,14 @@ body {
     font-family: 'Roboto', 'Montserrat', 'Oswald', sans-serif;;
 }
 
+h1 {
+    font-family: 'Montserrat';
+}
+
+h4 {
+    font-family: 'Oswald';
+}
+
 div#cat {
     float: left;
     width: 220px;
